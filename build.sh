@@ -44,3 +44,6 @@ fi
 
 cd faster-rnnlm
 make -j
+if [ -f ./rnnlm ]; then
+    mv rnnlm ../bin
+fi

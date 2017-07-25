@@ -50,7 +50,7 @@ bool AreGradientsCorrect(
       params(r, c) = orig_value;
 
       if (std::abs(analytical_grad - numerical_grad) > ToleranceEps
-          || isnan(analytical_grad) || isnan(numerical_grad)) {
+          || std::isnan(analytical_grad) || std::isnan(numerical_grad)) {
         fprintf(stderr, "%f %f (%f - %f)\n",
             params(0, 0), analytical_grads(0, 0), cost_plus, cost_minus);
         fprintf(stderr,

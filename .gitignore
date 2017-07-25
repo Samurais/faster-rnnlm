@@ -1,0 +1,4 @@
+eigen3/
+faster-rnnlm/*.o
+faster-rnnlm/layers/*.o
+rnnlm
